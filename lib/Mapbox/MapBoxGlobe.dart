@@ -13,6 +13,7 @@ import 'package:flutter/painting.dart'; // Contains Flutter's Size class
 
 
 import '../CustomWidgets/MapSlider.dart';
+import '../CustomWidgets/MapSlider.dart';
 import '../CustomWidgets/triangle.dart';
 import '../demo.dart';
 
