@@ -40,45 +40,76 @@ import 'registration_Screen/createNewAccount/googlemaps.dart';
 import 'messages/messageSection.dart';
 
 void main() {
-  runApp(
-      GetMaterialApp(
+  runApp(GetMaterialApp(
     initialRoute: '/MapBoxGlobe',
     getPages: [
-      GetPage(name: '/SplashScreen', page: ()=> SplashScreen()),
-      GetPage(name: '/UploadMedia', page: ()=> UploadMedia()),
-      GetPage(name: '/SplashScreen', page: ()=> SplashScreen()),
-      GetPage(name: '/Favourite_place', page: ()=> FilterCategory()),
-      GetPage(name: '/Trends', page: ()=> Trends()),
-      GetPage(name: '/MoreTrends', page: ()=> MoreTrends()),
-      GetPage(name: '/ExploreSection', page: ()=> ExploreSection()),
-      GetPage(name: '/Explore', page: ()=> Explore()),
-      GetPage(name: '/FollowersSection', page: ()=> FollowersSection()),
-      GetPage(name: '/Favourite_place', page: ()=> Favourite_place()),
-      GetPage(name: '/AlbumSearch', page: ()=> AlbumSearch()),
-      GetPage(name: '/CreateItinerary', page: ()=> CreateItinerary()),
-      GetPage(name: '/profile', page: ()=> profile()),
-      GetPage(name: '/messageSection', page: ()=> MessageSection()),
-      GetPage(name: '/MapBoxGlobe', page: ()=> MapBoxGlobe()),
-      GetPage(name: '/GoogleMapScreen', page: ()=> GoogleMapScreen()),
-      GetPage(name: '/StackImages', page: ()=> StackImages()),
-      GetPage(name: '/GoogleMapScreen', page: ()=> GoogleMapScreen()),
-      GetPage(name: '/VideoScreen', page: ()=> VideoScreen()),
-      GetPage(name: '/Welcome_PageView', page: ()=> Welcome_PageView()),
-      GetPage(name: '/WelcomeOne', page: ()=> WelcomeOne()),
-      GetPage(name: '/WelcomeSecond', page: ()=> WelcomeSecond()),
-      GetPage(name: '/WelcomeThird', page: ()=> WelcomeThird()),
-      GetPage(name: '/Login_Screen', page: ()=> Login_Screen()),
-      GetPage(name: '/Enter_Name', page: ()=> EnterName()),
-      GetPage(name: '/Forget_Password', page: ()=> Forget_Password()),
-      GetPage(name: '/AddCollection', page: ()=> AddCollection()),
-      GetPage(name: '/BottomNavigator', page: ()=> BottomNavigator()),
-      GetPage(name: '/OTPAndNewPasswordScreen', page: ()=> OTPAndNewPasswordScreen(email: '',)),
-      GetPage(name: '/Insert_email', page: ()=> InsertEmail(firstName: '', lastName: '', username: '',)),
-      GetPage(name: '/Create_Password', page: ()=> Create_Password(firstname: '', lastname: '', email: '', dateOfBirth: '', gender: '', username: '',)),
-      GetPage(name: '/Nickname', page: ()=> Choose_Nickname(firstName: '', lastName: '', email: '', password: '', confirmPassword: '', username: '', gender: '', dateOfBirth: '',)),
-      GetPage(name: '/OTP_Verification', page: ()=> OTP_Verification(email: '', token: '',)),
+      GetPage(name: '/UploadMedia', page: () => UploadMedia()),
+      GetPage(name: '/SplashScreen', page: () => SplashScreen()),
+      GetPage(name: '/Favourite_place', page: () => FilterCategory()),
+      GetPage(name: '/Trends', page: () => Trends()),
+      GetPage(name: '/MoreTrends', page: () => MoreTrends()),
+      GetPage(name: '/ExploreSection', page: () => ExploreSection()),
+      GetPage(name: '/Explore', page: () => Explore()),
+      GetPage(name: '/FollowersSection', page: () => FollowersSection()),
+      GetPage(name: '/Favourite_place', page: () => Favourite_place()),
+      GetPage(name: '/AlbumSearch', page: () => AlbumSearch()),
+      GetPage(name: '/CreateItinerary', page: () => CreateItinerary()),
+      GetPage(name: '/profile', page: () => profile()),
+      GetPage(name: '/messageSection', page: () => MessageSection()),
+      GetPage(name: '/MapBoxGlobe', page: () => MapBoxGlobe()),
+      GetPage(name: '/GoogleMapScreen', page: () => GoogleMapScreen()),
+      GetPage(name: '/StackImages', page: () => StackImages()),
+      GetPage(name: '/GoogleMapScreen', page: () => GoogleMapScreen()),
+      GetPage(name: '/VideoScreen', page: () => VideoScreen()),
+      GetPage(name: '/Welcome_PageView', page: () => Welcome_PageView()),
+      GetPage(name: '/WelcomeOne', page: () => WelcomeOne()),
+      GetPage(name: '/WelcomeSecond', page: () => WelcomeSecond()),
+      GetPage(name: '/WelcomeThird', page: () => WelcomeThird()),
+      GetPage(name: '/Login_Screen', page: () => Login_Screen()),
+      GetPage(name: '/Enter_Name', page: () => EnterName()),
+      GetPage(name: '/Forget_Password', page: () => Forget_Password()),
+      GetPage(name: '/AddCollection', page: () => AddCollection()),
+      GetPage(name: '/BottomNavigator', page: () => BottomNavigator()),
+      GetPage(
+          name: '/OTPAndNewPasswordScreen',
+          page: () => OTPAndNewPasswordScreen(
+                email: '',
+              )),
+      GetPage(
+          name: '/Insert_email',
+          page: () => InsertEmail(
+                firstName: '',
+                lastName: '',
+                username: '',
+              )),
+      GetPage(
+          name: '/Create_Password',
+          page: () => Create_Password(
+                firstname: '',
+                lastname: '',
+                email: '',
+                dateOfBirth: '',
+                gender: '',
+                username: '',
+              )),
+      GetPage(
+          name: '/Nickname',
+          page: () => Choose_Nickname(
+                firstName: '',
+                lastName: '',
+                email: '',
+                password: '',
+                confirmPassword: '',
+                username: '',
+                gender: '',
+                dateOfBirth: '',
+              )),
+      GetPage(
+          name: '/OTP_Verification',
+          page: () => OTP_Verification(
+                email: '',
+                token: '',
+              )),
     ],
   ));
 }
-
-
